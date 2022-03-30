@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title> Medicamento </title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<div class="w3-panel w3-cyan">
+
+  <center>
+        <h3> <font color="white"> Medicamento |  {{ m.medicamento_nome}} </font></h3>
+    </center>
+
+</div>
+<center>
+    <ul>
+    <h2>Informação do Medicamento</h2>
+    <p><b> Código: </b>{{ m.cod_med }}</p>
+    <p><b> DCI: </b>{{ m.medicamento_dci}}</p>
+    <p><b>Nome: </b>{{ m.medicamento_nome}}</p>
+    <p><b> Dosagem: </b>{{ m.medicamento_dosagem }}</p>
+    <p><b> Estado de Autorização: </b>{{ m.medicamento_estadoauth }}</p>
+    <p><b> Genérico: </b>{{ m.medicamento_generico }}</p>
+    <p><b> Titular: </b>{{ m.medicamento_titular }}</p>
+    <p><b> Forma Farmacêutica: </b>{{ m.medicamento_formafarmaceutica}}</p>
+    <br/>
+</ul>
+
+
+    <br/>
+    <br/>
+    <p><a href="procurarmedicamento.html" class="w3-button w3-grey">Retroceder</a></p>  <p><a href="/app1" class="w3-button w3-grey">Voltar à homepage</a></p>
+
+</center>
+
+</body>
+</html>

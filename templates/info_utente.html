@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Ficha Clínica</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<div class="w3-panel w3-cyan">
+
+  <center>
+        <h3> <font color="white"> Ficha Clínica |  {{ u.utente_nome}} </font></h3>
+    </center>
+
+</div>
+<center>
+    <ul>
+    <h2>Informação do Utente</h2>
+    <p><b>Número de Identificação do Paciente: </b>{{ u.idu }}</p>
+    <p><b>Nome: </b>{{ u.utente_nome}}</p>
+    <p><b>Número de Cartão de Cidadão: </b>{{ u.utente_cc}}</p>
+    <p><b>Número de Identificação Fiscal: </b>{{ u.utente_nif }}</p>
+    <p><b>Morada : </b>{{ u.utente_morada }}</p>
+    <p><b>Código Postal: </b>{{ u.utente_cp }}</p>
+    <br/>
+
+
+</ul>
+<ul>
+
+
+
+
+
+
+    <br/>
+    <br/>
+    <p><a href="procurarutente.html" class="w3-button w3-grey">Retroceder</a></p>  <p><a href="/app1" class="w3-button w3-grey">Voltar à homepage</a></p>
+</ul>
+</center>
+
+</body>
+</html>

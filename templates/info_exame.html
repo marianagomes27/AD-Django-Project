@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Exames</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<div class="w3-panel w3-cyan">
+
+  <center>
+        <h3> <font color="white"> Exames | {{ e.exame_tipo }}  </font></h3>
+    </center>
+
+</div>
+<center>
+    <ul>
+    <h2>Informação sobre os exames:</h2>
+        {% for e in exame  %}
+    <p><b>Número de identificação: </b>{{ e.ide }}</p>
+    <p><b>Data: </b>{{ e.exame_data}}</p>
+    <p><b>Hora: </b>{{ e.exame_hora}}</p>
+    <p><b>Tipo: </b>{{ e.exame_tipo }}</p>
+    <p><b>Local: </b>{{ e.exame_local }}</p>
+    <p><b> Profissional de Saúde associado: </b>{{ e.idm}}</p>
+    <p><b> Paciente submetido ao exame: </b>{{ e.idu}}</p>
+    <p><b> Duração: </b>{{ e.exame_duracao }}</p>
+    <p><b> Preço: </b>{{ e.exame_preco }}</p>
+    <br/>
+    {%endfor %}
+
+</ul>
+
+
+    <br/>
+    <br/>
+    <p><a href="procurarexame.html" class="w3-button w3-grey">Retroceder</a></p>  <p><a href="/app1" class="w3-button w3-grey">Voltar à homepage</a></p>
+
+</center>
+
+</body>
+</html>

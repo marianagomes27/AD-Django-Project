@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Médico</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<div class="w3-panel w3-cyan">
+
+  <center>
+        <h3> <font color="white"> Médico | {{ m1.med_nome}}  </font></h3>
+    </center>
+
+</div>
+<center>
+    <ul>
+    <h2>Informação sobre o médico:</h2>
+    <p><b>Número de identificação: </b>{{ m1.idm}}</p>
+    <p><b>Nome: </b>{{ m1.med_nome}}</p>
+     <p><b>Número de Identificação Fiscal (NIF): </b>{{m1.med_nif}}</p>
+     <p><b>Cédula: </b>{{ m1.med_ced}}</p>
+     <p><b>Número de Cartão de Cidadão: </b>{{ m1.med_cc}}</p>
+
+    <br/>
+</ul>
+
+
+    <br/>
+    <br/>
+    <p><a href="procurarmedico.html" class="w3-button w3-grey">Retroceder</a></p>  <p><a href="/app1" class="w3-button w3-grey">Voltar à homepage</a></p>
+
+</center>
+
+</body>
+</html>

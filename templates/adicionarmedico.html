@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title> Adicionar Médico </title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<div class="w3-panel w3-cyan">
+
+    <center>
+        <h3> <font color="white"> Adicionar Médico </font></h3>
+    </center>
+
+</div>
+<center>
+    <ul>
+
+    <p><b>Campos de preenchimento obrigatório</b></p>
+
+    <form method="post" action=" "> {% csrf_token %}
+         {{ form.as_p }}
+        <input type="submit" value="Adicionar">
+        <br/>
+        <br/>
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </form>
+    <br/>
+    <br/>
+   <p><a href="gestor.html" class="w3-button w3-grey">Retroceder</a></p>
+        <p><a href="/app1" class="w3-button w3-grey">Voltar à homepage</a></p>
+    <p><a href="logout.html" class="w3-button w3-grey">Log out</a></p>
+</ul>
+</center>
+
+</body>
+</html>

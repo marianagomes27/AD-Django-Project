@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title> Registo </title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<div class="w3-panel w3-cyan">
+
+    <center>
+        <h3> <font color="white"> Registo </font></h3>
+    </center>
+
+</div>
+
+
+    <ul>
+    <center>
+         Caso já tenhas um conta, faz o <a href="login.html" target="blank"><strong>login</strong></a>.
+    </center>
+
+    <p><b>Insira um username e uma password:</b></p>
+ <div class="container">
+        <form method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+
+    <input type="submit" value="Registar">
+            <br/>
+        <br/>
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+
+        </form>
+
+
+    </div>
+    <br/>
+    <br/>
+    <p>  <p><a href="/app1" class="w3-button w3-grey">Voltar à homepage</a></p>
+</ul>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
