@@ -10,9 +10,9 @@ The system developed allows different entities (Doctor, Manager, Secretary) to p
 
 ## Working environment
 
-* Programming language: Python
-* Framework: Django
-* Database: SQL (PostgresSQL)
+* Programming language: **Python**
+* Framework: **Django**
+* Database: **SQL (PostgresSQL)**
 
 ## Authors
 - Ana Pinto
